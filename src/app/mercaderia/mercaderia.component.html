@@ -1,0 +1,15 @@
+
+<div class="card">
+    <img class="image" [src]="dataEntrante.image" alt="">
+    <div class="caption">
+        <div class="title">{{dataEntrante.titulo}}</div>
+        <div class="sub-title">{{dataEntrante.subtitulo}}</div>
+        <div class="peso">
+          <input type="number" [(ngModel)]="peso" step="0.5" min="0" class="peso-input">
+          </div>
+        <br>
+        <button class="carrito " (click)="AgregarACarrito()"><i class="fa fa-shopping-cart"></i>Añadir a Carrito</button>
+    </div>
+</div>
+
+

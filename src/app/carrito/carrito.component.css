@@ -1,0 +1,32 @@
+:host {
+    padding-left: 5rem;
+    padding-right: 5rem;
+    display: block;
+  }
+  
+  .title {
+    font-size: 2rem;
+    font-weight: 1rem;
+  }
+  
+  .mini-image {
+    width: 5rem;
+    height: auto;
+  }
+  
+h3 i {
+  margin-right: 10px;  
+}
+
+article {
+  display: flex;
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+  font-size: 0.9em;
+}
+
+span {
+  display: inline-block;
+  width: 22%;
+  margin-right: 2%;
+}

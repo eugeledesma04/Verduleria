@@ -1,0 +1,25 @@
+.grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: .1rem;
+    padding-left: 0rem;
+    padding-bottom: 1rem;
+}
+h1 {
+  font-family: Verdana;
+  text-align: center;
+  background-color: rgba(49, 138, 19, 0.649);
+  margin: 0;
+  font-size: 54px;
+}
+
+.container {
+  background-color:white;
+}
+
+h2 {
+    color: red;
+    font-size: 36px;
+    text-align: center;
+}
+

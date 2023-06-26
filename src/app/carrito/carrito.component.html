@@ -1,0 +1,18 @@
+<div>
+  <h3 class="title"><i class="fa fa-shopping-cart"></i>Carrito</h3>
+</div>
+
+<h2>Carrito:</h2>
+
+<div>
+  <article *ngFor="let mercaderia of carrito; let i = index">
+    <span><img class="mini-image" [src]="mercaderia.image" alt=""></span>
+    <span>{{ mercaderia.titulo }}</span>
+    <span>{{ mercaderia.subtitulo }}</span>
+    <span>{{ mercaderia.peso }}</span>
+    <button (click)="eliminarMercaderia(i)">Eliminar mercaderia</button>
+  </article>
+</div>
+
+
+  

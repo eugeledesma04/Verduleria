@@ -1,0 +1,18 @@
+
+<div class="container">
+  <h1>{{titulo}}</h1>
+<h2>Frutas</h2>
+
+<div class="grid">
+    <app-mercaderia [dataEntrante]="fruta" *ngFor="let fruta of frutas"></app-mercaderia>
+</div>
+
+<h2>Verduras</h2>
+
+<div class="grid">
+  <app-mercaderia [dataEntrante]="Verdura" *ngFor="let Verdura of verduras"></app-mercaderia>
+</div>
+
+<app-carrito></app-carrito>
+</div>
+

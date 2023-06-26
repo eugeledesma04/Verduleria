@@ -1,0 +1,37 @@
+.card{
+    min-width: 100px;
+    max-width: 150px;
+    margin: 0;
+    border: 1px solid rgba(0,0,0,.3);
+    border-radius: 4px;
+    padding: 30px;
+    box-shadow: 2px 2px 2px 0.2px lightgrey;
+}
+img{
+    width: 150px;
+    height: 150px;
+    margin: 0;
+}
+
+.carrito {
+    display: flex;
+    background-color: rgb(27, 174, 40);
+    border-color: green;
+    color: #fff;
+    width: 130px;
+    height: 30px;
+    font-size: 13px;
+    align-items: center;
+    border-radius: 4px;
+    transition: 0.34s;
+}
+
+.carrito i {
+    margin: auto;
+}
+
+.carrito:hover {
+    width:140px;
+    height: 40px;
+    font-size:14px; 
+}
