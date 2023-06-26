@@ -20,7 +20,13 @@ export class MercaderiaComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
+/** 
+ * Comprueba si el peso ingresado es mayor o igual a cero. Esto se hace para asegurarse de que el peso sea    válido y no negativo.
+ * Calcula el precio subtotal multiplicando el precio por kilogramo del artículo (this.dataEntrante.precio) por  el peso ingresado (this.peso).
+ * Crea un objeto mercaderiaEnCarrito que contiene la información del artículo a agregar al carrito, incluyendo el artículo en sí (this.dataEntrante), el peso, el precio subtotal, el título, la imagen y el subtitulo.
+ * Emite un evento utilizando el servicio ServicioCarritoService para notificar a otros componentes que se ha agregado un artículo al carrito. El objeto mercaderiaEnCarrito se envía como dato dentro del evento.
+ * En resumen, este método valida el peso ingresado, calcula el precio subtotal y agrega el artículo al carrito enviando un evento con la información relevante.
+*/
   AgregarACarrito(): void {
     if (this.peso >= 0) {
       const precioSubtotal = this.dataEntrante.precio * this.peso;
